@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dental Medrano — Portal</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f5f5f3;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1rem;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 2.5rem;
+      text-align: left;
+    }
+    .logo {
+      width: 46px;
+      height: 46px;
+      border-radius: 10px;
+      background: #185FA5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .logo svg { width: 24px; height: 24px; fill: white; }
+    .header-text h1 { font-size: 20px; font-weight: 600; color: #1a1a1a; }
+    .header-text p { font-size: 13px; color: #888; margin-top: 2px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+      width: 100%;
+      max-width: 860px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #e5e5e3;
+      border-radius: 14px;
+      padding: 1.4rem;
+      text-decoration: none;
+      display: block;
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .card:hover {
+      border-color: #ccc;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+    .card-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+    .card-title { font-size: 15px; font-weight: 600; color: #1a1a1a; margin-bottom: 5px; }
+    .card-desc { font-size: 13px; color: #666; line-height: 1.55; margin-bottom: 16px; }
+    .card-url {
+      font-size: 11px;
+      color: #aaa;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .card-url svg { width: 10px; height: 10px; flex-shrink: 0; }
+    footer {
+      margin-top: 3rem;
+      font-size: 12px;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 3C9 3 7 5.5 7 8c0 1.8.8 3.4 2 4.4V20a3 3 0 006 0v-7.6c1.2-1 2-2.6 2-4.4 0-2.5-2-5-5-5z"/>
+      </svg>
+    </div>
+    <div class="header-text">
+      <h1>Dental Medrano</h1>
+      <p>Portal de aplicaciones internas</p>
+    </div>
+  </div>
+
+  <div class="grid">
+
+    <a class="card" href="https://cursos-dmt.vercel.app/panel/dmt123" target="_blank" rel="noopener">
+      <div class="card-icon" style="background:#E6F1FB;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3" y="4" width="18" height="16" rx="2" stroke="#185FA5" stroke-width="1.5"/>
+          <path d="M8 9h8M8 13h5" stroke="#185FA5" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M3 8h18" stroke="#185FA5" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <div class="card-title">DM Training</div>
+      <div class="card-desc">Plataforma de capacitación y seguimiento de participantes de cursos.</div>
+      <div class="card-url">
+        <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 10L10 2M10 2H4M10 2v6" stroke="#aaa" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        cursos-dmt.vercel.app
+      </div>
+    </a>
+
+    <a class="card" href="https://dental-medrano-crm.vercel.app/login" target="_blank" rel="noopener">
+      <div class="card-icon" style="background:#EAF3DE;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="9" cy="7" r="3" stroke="#3B6D11" stroke-width="1.5"/>
+          <path d="M3 19c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M16 11l2 2 4-4" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="card-title">CRM Comercial</div>
+      <div class="card-desc">Gestión de visitas comerciales, clientes y actividad del equipo de ventas.</div>
+      <div class="card-url">
+        <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 10L10 2M10 2H4M10 2v6" stroke="#aaa" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        dental-medrano-crm.vercel.app
+      </div>
+    </a>
+
+    <a class="card" href="https://dental-medrano-trivia.vercel.app/admin/login" target="_blank" rel="noopener">
+      <div class="card-icon" style="background:#FAEEDA;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9" stroke="#854F0B" stroke-width="1.5"/>
+          <path d="M12 7v6M12 16v1" stroke="#854F0B" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="card-title">Admin Trivia</div>
+      <div class="card-desc">Panel de administración del juego de trivia para eventos y capacitaciones.</div>
+      <div class="card-url">
+        <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 10L10 2M10 2H4M10 2v6" stroke="#aaa" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        dental-medrano-trivia.vercel.app
+      </div>
+    </a>
+
+    <a class="card" href="https://diatechcatalog.vercel.app/" target="_blank" rel="noopener">
+      <div class="card-icon" style="background:#FAECE7;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3" y="3" width="7" height="7" rx="1.5" stroke="#993C1D" stroke-width="1.5"/>
+          <rect x="14" y="3" width="7" height="7" rx="1.5" stroke="#993C1D" stroke-width="1.5"/>
+          <rect x="3" y="14" width="7" height="7" rx="1.5" stroke="#993C1D" stroke-width="1.5"/>
+          <rect x="14" y="14" width="7" height="7" rx="1.5" stroke="#993C1D" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <div class="card-title">Catálogo Diatech</div>
+      <div class="card-desc">Catálogo de productos Diatech para el equipo comercial.</div>
+      <div class="card-url">
+        <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 10L10 2M10 2H4M10 2v6" stroke="#aaa" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        diatechcatalog.vercel.app
+      </div>
+    </a>
+
+    <a class="card" href="https://dentalmedranocongresos.vercel.app/auth" target="_blank" rel="noopener">
+      <div class="card-icon" style="background:#FBEAF0;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="#993556" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="9" cy="7" r="4" stroke="#993556" stroke-width="1.5"/>
+          <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#993556" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="card-title">Congresos</div>
+      <div class="card-desc">Gestión y seguimiento de congresos y eventos de Dental Medrano.</div>
+      <div class="card-url">
+        <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 10L10 2M10 2H4M10 2v6" stroke="#aaa" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        dentalmedranocongresos.vercel.app
+      </div>
+    </a>
+
+    <a class="card" href="https://dental-medrano-cursos.vercel.app/" target="_blank" rel="noopener">
+      <div class="card-icon" style="background:#EEEDFE;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3" y="4" width="18" height="16" rx="2" stroke="#534AB7" stroke-width="1.5"/>
+          <path d="M3 9h18" stroke="#534AB7" stroke-width="1.5"/>
+          <path d="M8 2v4M16 2v4" stroke="#534AB7" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M7 13h4M7 16h6" stroke="#534AB7" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="card-title">Cursos</div>
+      <div class="card-desc">Calendario y gestión de cursos y eventos educativos de Dental Medrano.</div>
+      <div class="card-url">
+        <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 10L10 2M10 2H4M10 2v6" stroke="#aaa" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        dental-medrano-cursos.vercel.app
+      </div>
+    </a>
+
+  </div>
+
+  <footer>Dental Medrano · Herramientas internas</footer>
+
+</body>
+</html>
